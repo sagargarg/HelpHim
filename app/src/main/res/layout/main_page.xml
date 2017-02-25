@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Tap to Start Diagnosis"
+        android:text="Tap to start diagnosis"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_centerVertical="true"
@@ -60,12 +60,13 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:background="#FFFFFF"
+        android:textColor="#FFFFFF"
         android:onClick="openAbout"
-        android:textColor="@color/colorRed"
+        android:background="@color/colorRed"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        style="?android:attr/borderlessButtonStyle"/>
 
 
 </RelativeLayout>
