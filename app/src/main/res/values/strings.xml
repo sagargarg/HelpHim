@@ -3,4 +3,13 @@
 
     <string name="stringYES">YES</string>
     <string name="stringNO">NO</string>
+
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+    
 </resources>

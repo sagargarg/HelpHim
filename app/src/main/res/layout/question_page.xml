@@ -12,11 +12,31 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:layout_height="100dp"
+        android:text="1"
+        android:textSize="25sp"
+        android:id="@+id/number"/>
 
-    <!--<Button-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text=")"
+        android:textSize="25sp"
+        android:id="@+id/number2"
+        android:layout_toRightOf="@+id/number"
+        android:layout_toEndOf="@+id/number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Ask the person to smile. Is the person’s smile uneven or lopsided?"
+        android:id="@+id/question"
+        android:layout_toRightOf="@+id/number2"
+        android:layout_toEndOf="@+id/number2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:text="Button"-->
