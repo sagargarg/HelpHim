@@ -25,4 +25,9 @@ public class MainPage extends AppCompatActivity {
         });
     }
 
+    public void openAbout(View v) {
+        Intent intent = new Intent(MainPage.this, AboutPage.class);
+        startActivity(intent);
+    }
+
 }
