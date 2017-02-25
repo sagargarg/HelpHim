@@ -13,8 +13,8 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
 
-        RelativeLayout rlayout = (RelativeLayout) findViewById(R.id.main_page);
-        rlayout.setOnClickListener(new View.OnClickListener() {
+        View v = (View) findViewById(R.id.main_page);
+        v.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
