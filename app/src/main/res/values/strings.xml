@@ -4,6 +4,13 @@
     <string name="stringYES">YES</string>
     <string name="stringNO">NO</string>
 
+    <string name="stroke">Stroke</string>
+    <string name="seizure">Seizure</string>
+    <string name="concussion">Concussion</string>
+    <string name="drugod">Drug OD</string>
+    <string name="alcohol">Alcohol Poisioning</string>
+    <string name="cardiac">Cardiac Arrest</string>
+
 
     <string-array name="planets_array">
         <item>Mercury?</item>
@@ -11,10 +18,52 @@
         <item>Earth?</item>
         <item>Mars?</item>
         <item>Jupiter?</item>
-        <item>Saturn?</item>
-        <item>Uranus?</item>
+        <item>Alcohol Poisioning</item>
+        <item>Stroke</item>
         <item>Neptune?</item>
         <item>Pluto - No longer a planet</item>
+    </string-array>
+
+    <string-array name="stroke">
+        <item>Stroke Step 1</item>
+        <item>Stroke Step 2</item>
+        <item>Stroke Step 3</item>
+        <item>Stroke Step 4</item>
+    </string-array>
+
+    <string-array name="seizure">
+        <item>Seizure Step 1</item>
+        <item>Seizure Step 2</item>
+        <item>Seizure Step 3</item>
+        <item>Seizure Step 4</item>
+    </string-array>
+
+    <string-array name="concussion">
+        <item>Concussion Step 1</item>
+        <item>Concussion Step 2</item>
+        <item>Concussion Step 3</item>
+        <item>Concussion Step 4</item>
+    </string-array>
+
+    <string-array name="drugod">
+        <item>DrugOD Step 1</item>
+        <item>DrugOD Step 2</item>
+        <item>DrugOD Step 3</item>
+        <item>DrugOD Step 4</item>
+    </string-array>
+
+    <string-array name="alcohol">
+        <item>Alcohol Step 1</item>
+        <item>Alcohol Step 2</item>
+        <item>Alcohol Step 3</item>
+        <item>Alcohol Step 4</item>
+    </string-array>
+
+    <string-array name="cardiac">
+        <item>Cardiac Step 1</item>
+        <item>Cardiac Step 2</item>
+        <item>Cardiac Step 3</item>
+        <item>Cardiac Step 4</item>
     </string-array>
 
 </resources>

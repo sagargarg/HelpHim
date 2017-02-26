@@ -26,6 +26,7 @@ import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListe
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class QuestionPage extends AppCompatActivity {
@@ -42,6 +43,11 @@ public class QuestionPage extends AppCompatActivity {
     public String string3 = "This is sample question 3";
     public String string4 = "This is sample question 4";
     public String string5 = "This is sample question 5";
+
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+
+    private static final String TAG = "Questions";
 
     Resources res;
     static String[] planets;
@@ -82,6 +88,11 @@ public class QuestionPage extends AppCompatActivity {
                 updateQuestion(response);
             }
         });
+
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
