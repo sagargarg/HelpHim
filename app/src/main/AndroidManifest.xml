@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".QuestionPage" />
-        <activity android:name=".AboutPage"></activity>
+        <activity android:name=".AboutPage" />
+        <activity android:name=".FinalPage"></activity>
     </application>
 
 </manifest>

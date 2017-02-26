@@ -12,14 +12,12 @@ import android.widget.Toast;
 public class QuestionPage extends AppCompatActivity {
 
     public String response;
-    public String questionString;
     public int countQuestion;
     public TextView tv;
     public TextView question;
 
-    //public String[] questions = new String[10];
+    public static String diagnosis;
 
-    //questions[0] = "This is sample question 1";
 
     public String string2 = "This is sample question 2";
     public String string3 = "This is sample question 3";
@@ -35,46 +33,50 @@ public class QuestionPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_page);
 
-        Button buttonYES = (Button) findViewById(R.id.buttonYES);
-        Button buttonNO = (Button) findViewById(R.id.buttonNO);
-
-        buttonNO.setOnClickListener(buttonClickListener);
-        buttonYES.setOnClickListener(buttonClickListener);
-
         res = getResources();
         planets = res.getStringArray(R.array.planets_array);
 
+        Button buttonYES = (Button) findViewById(R.id.buttonYES);
+        Button buttonNO = (Button) findViewById(R.id.buttonNO);
         tv = (TextView) findViewById(R.id.number);
+        question = (TextView) findViewById(R.id.question);
+
         String tvValue = tv.getText().toString();
         countQuestion = Integer.parseInt(tvValue);
 
-        question = (TextView) findViewById(R.id.question);
+        buttonYES.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                response = "YES";
+                updateQuestion(response);
+            }
+        });
+
+        buttonNO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                response = "NO";
+                updateQuestion(response);
+            }
+        });
+
     }
 
-    private View.OnClickListener buttonClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(QuestionPage.this, QuestionPage.class);
-            switch (v.getId()) {
-                case R.id.buttonYES:
-                    response = "YES";
-                    //Toast.makeText(QuestionPage.this, countQuestion + ": Old", Toast.LENGTH_SHORT).show();
-                    countQuestion += 1;
-                    //Toast.makeText(QuestionPage.this, countQuestion + ": New", Toast.LENGTH_SHORT).show();
-                    tv.setText(countQuestion + "");
-                    question.setText(planets[countQuestion - 1]);
-                    //questionString = planets[countQuestion - 1];
-                    //Toast.makeText(QuestionPage.this, "YES", Toast.LENGTH_SHORT).show();
-                    startActivity(intent);
-                    break;
-                case R.id.buttonNO:
-                    response = "NO";
-                    countQuestion += 1;
-                    tv.setText(countQuestion + "");
-                    question.setText(planets[countQuestion - 1]);
-                    startActivity(intent);
-                    break;
-            }
+    private void updateQuestion(String response) {
+        // Send value of response to firebase
+        countQuestion += 1;
+        String newQuestion = planets[countQuestion - 1];
+
+        String lastChar = newQuestion.substring(newQuestion.length() - 1);
+        if (lastChar.equals("?")) {
+            tv.setText(countQuestion + "");
+            question.setText(newQuestion);
         }
-    };
+        else{
+            diagnosis = newQuestion;
+            Intent sendStuff = new Intent(this, FinalPage.class);
+            sendStuff.putExtra("diagnosis", diagnosis);
+            startActivity(sendStuff);
+        }
+    }
 }

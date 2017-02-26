@@ -6,10 +6,15 @@
 
 
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
+        <item>Mercury?</item>
+        <item>Venus?</item>
+        <item>Earth?</item>
+        <item>Mars?</item>
+        <item>Jupiter?</item>
+        <item>Saturn?</item>
+        <item>UrAnus?</item>
+        <item>Neptune?</item>
+        <item>Pluto - No longer a planet</item>
     </string-array>
-    
+
 </resources>
