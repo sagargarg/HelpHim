@@ -47,6 +47,10 @@ public class QuestionPage extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
 
+
+    DatabaseReference myRef2;
+    public String newQuestion;
+
     private static final String TAG = "Questions";
 
     Resources res;
@@ -91,7 +95,6 @@ public class QuestionPage extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("message");
-
         myRef.setValue("Hello, World!");
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -105,21 +108,36 @@ public class QuestionPage extends AppCompatActivity {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
                 Log.d(TAG, "Value is: " + value);
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
-                // Failed to read value
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
         // Send value of response to firebase
+
+        //GETS TWO QUESTIONS
+        for (int i = 0; i < 2; i++){
+            database = FirebaseDatabase.getInstance();
+            myRef2 = database.getReference("Questions");
+
+            myRef2.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    newQuestion = dataSnapshot.getValue(String.class);
+                    //Log.d(TAG, "Value is: " + value);
+                }
+
+                @Override
+                public void onCancelled(DatabaseError error) {
+                    Log.w(TAG, "Failed to read value.", error.toException());
+                }
+            });
+        }
         countQuestion += 1;
-        String newQuestion = planets[countQuestion - 1];
 
         String lastChar = newQuestion.substring(newQuestion.length() - 1);
         if (lastChar.equals("?")) {
