@@ -25,45 +25,50 @@
     </string-array>
 
     <string-array name="stroke">
-        <item>Stroke Step 1</item>
-        <item>Stroke Step 2</item>
-        <item>Stroke Step 3</item>
-        <item>Stroke Step 4</item>
+        <item>1.If the person is conscious, lay them down on their side with their head slightly raised and supported.</item>
+        <item>2.Do not give them anything to eat or drink.  Loosen any restrictive clothing that could cause breathing difficulties. If weakness is obvious in any limb, support it and avoid pulling on it when moving the person.</item>
+        <item>3.If they are unconscious, check their breathing and pulse and put them on their side.</item>
+        <item>4.Call 911 immidiately.</item>
     </string-array>
 
     <string-array name="seizure">
-        <item>Seizure Step 1</item>
-        <item>Seizure Step 2</item>
-        <item>Seizure Step 3</item>
-        <item>Seizure Step 4</item>
+        <item>1.Protect the person from injury.Make sure there are no sharp objects around.</item>
+        <item>2.Keep him or her from falling if you can, or try to guide the person gently to the floor.</item>
+        <item>3.Try to move furniture or other objects that might injure the person during the seizure.</item>
+        <item>4.Try to position the person on his or her side so that fluid can leak out of the mouth. But be careful not to apply too much pressure to the person's body.</item>
+        <item>4.Call 911 if seizure does not stop.</item>
     </string-array>
 
     <string-array name="concussion">
-        <item>Concussion Step 1</item>
-        <item>Concussion Step 2</item>
-        <item>Concussion Step 3</item>
-        <item>Concussion Step 4</item>
+        <item>1. To reduce swelling with a minor injury, gently apply an ice pack to the affected area. Apply ice every two to four hours, for 20-30 minute increments.</item>
+        <item>2.To treat head pain at home, take acetaminophen (Tylenol). Do not take ibuprofen or aspirin because that could make bruising or bleeding worse.</item>
+        <item>3. If the victim is conscious, ask questions continually. This serves two purposes: to assess the degree of the victim's impairment, and to keep the victim awake.</item>
+        <item>4.For the first twenty-four hours, stay with the victim. Do not leave them alone. Monitor their physical and cognitive function for any changes.</item>
+        <item>5.Do not read, watch TV, text, listen to music, play video games, or perform any other mental task.</item>
+        <item>6.Call 911 if situation worsens.</item>item>
     </string-array>
 
     <string-array name="drugod">
-        <item>DrugOD Step 1</item>
-        <item>DrugOD Step 2</item>
-        <item>DrugOD Step 3</item>
-        <item>DrugOD Step 4</item>
+        <item>1.Don’t wait for the substance they took to wear off, call 911 immediately!</item>
+        <item>2.Don’t feed them as you don’t know what effect that could have.</item>
+        <item>3.If the person is conscious, try to find out what they took and how much. This could help staff at the hospital know how to help.</item>
+        <item>4.Don’t encourage them to throw up. There’s a chance they could choke on their vomit.</item>
     </string-array>
 
     <string-array name="alcohol">
-        <item>Alcohol Step 1</item>
-        <item>Alcohol Step 2</item>
-        <item>Alcohol Step 3</item>
-        <item>Alcohol Step 4</item>
+        <item>1.Make certain that they stay on their side, not their back.</item>
+        <item>2.Before you touch them, tell them exactly what you are going to do. Be aware of any signs of aggression. Do not ridicule, judge, threaten, or try to counsel them.</item>
+        <item>3.Keep them quiet and comfortable. If they are in the sun, move them to the shade. If cold, move them to a warm place and offer a blanket.</item>
+        <item>4.Don't give them food, drink, or medication of any kind.</item>
+        <item>5.Remember that only time will sober up a drunk person. Walking, showering, or drinking coffee will not help and may actually cause harm.</item>
+        <item>6.Call 911 immediately.</item>
     </string-array>
 
     <string-array name="cardiac">
-        <item>Cardiac Step 1</item>
-        <item>Cardiac Step 2</item>
-        <item>Cardiac Step 3</item>
-        <item>Cardiac Step 4</item>
+        <item>1.Call 911. Don't ignore or attempt to tough out the symptoms of a heart attack for more than five minutes.</item>
+        <item>2.Begin CPR if the person is unconscious. The dispatcher can instruct you in the proper procedures until help arrives.</item>
+        <item>3.If an automated external defibrillator (AED) is available and the person is unconscious, begin CPR while the device is retrieved and set up.</item>
+        <item>4.Take nitroglycerin tablets, as directed by your doctor if person is conscious .</item>
     </string-array>
 
 </resources>
